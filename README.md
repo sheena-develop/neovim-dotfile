@@ -195,7 +195,7 @@ Neovimの設定リポジトリをクローンするためのコマンド:</br>
 | `Datetime`     | 現在の日付と時刻を表示、または Unix タイムスタンプを日付に変換            | `Datetime 12345` または `Datetime` |
 | `JSONFormat`   | JSON ファイルを整形                                                       | `JSONFormat`                   |　
 
-## 6. コミットメッセージの規則
+## コミットメッセージの規則
 
 コミットメッセージの一貫性と明確さを保つために、Semantic Commit Message の規則を採用しています
 
