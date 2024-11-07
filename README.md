@@ -111,12 +111,38 @@ Neovimの設定リポジトリをクローンするためのコマンド:</br>
 1. Neovimの最新バージョンがインストール済みであること
 2. node.jsがインストール済みであること
 3. フォント（0xProto）がインストール済みであること
-4. `sudo apt update`
-5. `sudo apt install -y python3 python3-pip`
-6. `pip3 install -U pynvim 'python-lsp-server[all]' pylsp-mypy python-lsp-isort python-lsp-black
-`
-7. `npm install -g pyright`
-8. `npm install -g vim-language-server`
+4. パッケージマネージャーのアップデート
+```
+sudo apt update
+```
+または
+```
+sudo dnf update
+```
+
+5. Pythonインストール
+```
+sudo apt install -y python3 python3-pip
+```
+または
+```
+sudo dnf install python3 python3-pip
+```
+
+6. PythonのLSPサーバーインストール
+```
+pip3 install -U pynvim 'python-lsp-server[all]' pylsp-mypy python-lsp-isort python-lsp-black
+```
+
+7. Python型チェック用のパッケージインストール
+```
+npm install -g pyright
+```
+
+8. vimのLSPサーバーのインストール
+```
+npm install -g vim-language-server
+```
 
 ## ディレクトリ構成と各ディレクトリの役割
 - after/ftplugin/：ファイルタイプごとの追加設定
